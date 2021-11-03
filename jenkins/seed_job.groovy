@@ -8,11 +8,11 @@ if (awsCredentialId == null) {
   throw new DslException('Please pass AWS credential parameter ' + 'AWS_CREDENTIAL' )
 }
 
-def sagemakerProjectName = "jenkins-btd-1"
-def sagemakerProjectId = "p-hdzaivmsdryg"
-def sourceModelPackageGroupName = "jenkins-btd-1-p-hdzaivmsdryg"
-def modelExecutionRole = "arn:aws:iam::426907972901:role/service-role/AmazonSageMakerServiceCatalogProductsUseRole"
-def awsRegion = "us-east-2"
+def sagemakerProjectName = "jenkins-project"
+def sagemakerProjectId = "p-ocxzgafil6ni"
+def sourceModelPackageGroupName = "jenkins-project-p-ocxzgafil6ni"
+def modelExecutionRole = "arn:aws:iam::736760139033:role/service-role/AmazonSageMakerServiceCatalogProductsUseRole"
+def awsRegion = "us-west-2"
 def artifactBucket = "sagemaker-project-p-hdzaivmsdryg"
 
 def pipelineName = "sagemaker-" + sagemakerProjectName + "-" + sagemakerProjectId + "-modeldeploy"
